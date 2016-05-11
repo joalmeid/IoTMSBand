@@ -1,0 +1,58 @@
+#border {
+    $size: 14px;
+    &__top, &__right, &__bottom, &__left {
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+    }
+    &__top {
+        top: 0;
+        height: $size;
+        width: 100%;
+    }
+    &__right {
+        right: 0;
+        width: $size;
+        height: 100%;
+    }
+    &__bottom {
+        bottom: 0;
+        width: 100%;
+        height: $size;
+    }
+    &__left {
+        left: 0;
+        width: $size;
+        height: 100%;
+    }
+}
+#vandal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#getme {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}

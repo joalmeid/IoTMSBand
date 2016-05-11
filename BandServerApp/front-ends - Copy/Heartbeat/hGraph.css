@@ -1,0 +1,83 @@
+body{
+height:800px;
+  
+ /*background-image: url("http://i.imgur.com/fcWRI2x.png");*/
+ 
+  background-image: linear-gradient(120deg, rgb(150, 0, 0), #1f0e06);
+  background-image: linear-gradient(120deg, rgb(12, 62, 141), #676350);
+  
+  background-image: linear-gradient(180deg, rgb(128, 20, 20), #d94504); 
+  
+  background-image: linear-gradient(120deg, rgb(12, 62, 141), #04d9c0);
+ 
+  
+/*  background:#161616;*/
+}
+
+button{
+  display:block;
+  clear: left;
+text-align:center;
+  width:5%;
+  margin:0 auto;
+}
+.wrapperCanvas{
+  text-align:center;
+  float:left;
+  width:100%;
+  height:38%;;
+  margin:0 auto;
+}
+.broj{
+margin-left:40px;
+  width:80px;
+  height:80px;
+  float:left;
+  color:rgba(0, 0, 255, .4);
+  font-size:3em;
+}
+.ln{
+margin-left: 10px;
+  height: 1px;
+    border-bottom: 1px solid rgba(0, 0, 255, .4);
+    border-top: 1px solid rgba(0, 0, 255, .4);
+    padding: 0; 
+  float:left;
+  height:0px;
+  width:20px;
+  
+}
+
+.second{
+width: 100%;
+  float:left;
+  text-align:center;
+}
+.bubble{
+  position:absolute;
+  z-index:999;
+  top: 100px;
+  left:630px;
+  width:150px;
+  opacity:0;
+  height:50px;
+  color:white;
+  animation: bloop 2s linear 3;
+  animation-delay: 4s;
+}
+
+a{
+  padding:30%;
+}
+
+@keyframes bloop {
+  0% {transform:translate3d(0,0,0) ; opacity: .7;}
+  100% { transform:translate3d(-49px,-80px,0); opacity: 0;}
+}
+.naslov{
+  text-align:center;
+    width:100%;
+    margin: 5 auto;
+    color:white;
+    
+  }
